@@ -1,10 +1,9 @@
 ## NAME:VESHWANTH
 ## REG NO:212224230300
 ### SYNCHRONOUS-UP-COUNTER
+# DATE:02-11-2025
 
 **AIM:**
-
-# DATE:02-11-2025
 
 To implement 4 bit synchronous up counter and validate functionality.
 
@@ -66,8 +65,19 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **RTL LOGIC UP COUNTER**
 
+<img width="1913" height="1136" alt="RTL" src="https://github.com/user-attachments/assets/f1a8c159-e650-4016-bee8-39d45935f485" />
+
+
 **TIMING DIAGRAM FOR IP COUNTER**
+
+<img width="1918" height="1137" alt="TIMING DIAGRAM" src="https://github.com/user-attachments/assets/7f69de7b-11e9-467c-ae84-b140f823c7b7" />
+
 
 **TRUTH TABLE**
 
+<img width="673" height="719" alt="image" src="https://github.com/user-attachments/assets/46e7c8fd-d708-437e-8e52-1b14e8dc3acd" />
+
+
 **RESULTS**
+
+The given Sychronous Up Counter is successfully implemented using Verilog HDL in the Quartus Prime.
