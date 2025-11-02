@@ -1,6 +1,10 @@
+## NAME:VESHWANTH
+## REG NO:212224230300
 ### SYNCHRONOUS-UP-COUNTER
 
 **AIM:**
+
+# DATE:02-11-2025
 
 To implement 4 bit synchronous up counter and validate functionality.
 
@@ -28,14 +32,37 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-/* write all the steps invloved */
+1.Understand: All flip-flops are triggered by the same clock (synchronous operation).
+
+2.Define module with inputs clk, rstn and output out[3:0].
+
+3.Use always block triggered on the posedge of clk.
+
+4.Apply reset: if rstn = 0, set output to 0000.
+
+5.Count up: else increment output by 1 on every clock pulse.
+
+6.Simulate: Apply clock and reset signals to test the counter.
+
+7.Verify: Check that output counts 0000 → 1111 → 0000 repeatedly.
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+    /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+    module upcounter(out,clk,rstn);
+    input clk,rstn;
+    output reg [3:0]out;
+    always @ (posedge clk)
+    begin
+    if(!rstn)
+        out<=0;
+    else 
+        out <= out+1;
+    end
+    endmodule
+
+    */
 
 **RTL LOGIC UP COUNTER**
 
